@@ -1,0 +1,3 @@
+node_modules/
+work/css/*.css
+package-lock.json
