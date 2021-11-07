@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="barbershop,Барбершоп, запись на прическуб форма записи">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Barbershop - Запись на стрижку</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="#" class="page-header__link"><img src="" alt="лого" class="page-header__img"></a>
+      <nav class="page-header__nav nav">
+        <div class="nav__wrape">
+          <p class="nav__title">Записаться</p>
+          <button type="button" class="nav__button">Открыть, закрыть меню</button>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="photo.html" class="nav__link">Наши работы</a></li>
+          <li class="nav__item"><a href="form.html" class="nav__link">Записаться</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Html Academy</a></li>
+          <li class="nav__item login"><a href="#" class="login__link">Войти</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-main__title visually-hidden">Записаться на прическу</h1>
+      <section class="sign">
+        <h2 class="sign__title">Запись на стрижку</h2>
+        <form class="sign__form form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__data">
+            <legend class="form__title visually-hidden">Личные данные</legend>
+            <div class="form__wrap">
+              <p>
+                <input type="text" name="family" value="" placeholder="Фамилия" id="family">
+                <label for="family">Фамилия</label>
+              </p>
+              <p>
+                <input type="text" name="name" value="" placeholder="Имя" id="name">
+                <label for="name">Имя</label>
+              </p>
+              <p>
+                <input type="text" name="surname" value="" placeholder="Отчество" id="surname">
+                <label for="surname">Отчество</label>
+              </p>
+            </div>
+            <div class="form__wrap">
+              <p>
+                <input type="tel" name="phone" value="" placeholder="Контактный телефон" id="phone">
+                <label for="phone">Контактный телефон</label>
+              </p>
+              <p>
+                <input type="email" name="email" value="" placeholder="Контактный e-mail" id="email">
+                <label for="email">Контактный e-mail</label>
+              </p>
+            </div>
+            <div class="form__wrap">
+              <p>
+                <textarea name="info" rows="8" cols="80" placeholder="Доп. информация для мастера"></textarea>
+              </p>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__model">
+            <legend class="form__title">Выберите модель бороды:</legend>
+            <p>
+              <input type="radio" name="model" value="admiral" checked id="admiral">
+              <label for="admiral">Адмирал</label>
+            </p>
+            <p>
+              <input type="radio" name="model" value="lamberjack" id="lumberjack">
+              <label for="lumberjack">Лесоруб</label>
+            </p>
+            <p>
+              <input type="radio" name="model" value="polar" id="polar">
+              <label for="polar">Полярник</label>
+            </p>
+            <p>
+              <input type="radio" name="model" value="boyar" id="boyar">
+              <label for="boyar">Боярин</label>
+            </p>
+            <p>
+              <input type="radio" name="model" value="sage" id="sage">
+              <label for="sage">Мудрец</label>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+  </body>
+</html>
