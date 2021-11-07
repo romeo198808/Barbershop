@@ -88,9 +88,69 @@
               <label for="sage">Мудрец</label>
             </p>
           </fieldset>
+          <fieldset class="form__services">
+            <legend class="form__title">Дополнительные услуги:</legend>
+            <p>
+              <input type="checkbox" name="service" value="point-beard" checked id="point-beard">
+              <label for="point-beard">Подкрасить бороду</label>
+            </p>
+            <p>
+              <input type="checkbox" name="service" value="twist-mustache" checked id="twist-mustache">
+              <label for="twist-mustache">Накрутить усы</label>
+            </p>
+            <p>
+              <input type="checkbox" name="service" value="comb-beard" id="comb-beard">
+              <label for="comb-beard">Причесать бороду</label>
+            </p>
+            <p>
+              <input type="checkbox" name="service" value="trim-whiskey" id="trim-whiskey">
+              <label for="trim-whiskey">Подровнять виски</label>
+            </p>
+            <p>
+              <input type="checkbox" name="service" value="remove-grayhair" id="remove-grayhair">
+              <label for="remove-grayhair">Убрать седину</label>
+            </p>
+            <p>
+              <input type="checkbox" name="service" value="polish-baldhead" id="polish-baldhead">
+              <label for="polish-baldhead">Отполировать лысину</label>
+            </p>
+          </fieldset>
+          <button type="submit">Отправить заявку</button>
         </form>
       </section>
     </main>
+
+    <footer class="page-footer">
+      <div class="address">
+        <p class="address__name">Барбершоп Бородинский</p>
+        <p class="address__text">г. Санкт-Петербург, ул. Большая-Конюшенная 19/8</p>
+        <p class="address__phone">+7(812)555-66-66</p>
+      </div>
+      <div class="social">
+        <p class="social__text">Добро пожаловать!</p>
+        <ul class="social__list">
+          <li class="social__item"><a href="#" class="social__link social__link--vk">ВКонтакте</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--fb">Фэйсбук</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--insta">Инстаграмм</a></li>
+        </ul>
+      </div>
+      <div class="developed">
+        <p class="developed__text">Разработано:</p>
+        <a href="#" class="developed__link">HTML Academy</a>
+      </div>
+    </footer>
+
+    <section class="wrong modal">
+      <h2 class="modal__title">Неудача</h2>
+      <p class="modal__text">Что-то пошло не так. Проверьте выделенные красным поля формы.</p>
+      <button type="button" class="modal__button">Ок</button>
+    </section>
+
+    <section class="success modal">
+      <h2 class="modal__title">Это успех</h2>
+      <p class="modal__text">Ваша заявка отправлена. Ожидайте, мы свяжемся с вами как только будет минутка.</p>
+      <button type="button" class="modal__button">Закрыть окно</button>
+    </section>
 
   </body>
 </html>
